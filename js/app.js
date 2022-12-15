@@ -1,0 +1,13 @@
+window.onload = function () {
+   setTimeout(function () {
+
+       document.body.classList.add('loaded')
+       if (window.matchMedia('(min-width: 1000px)').matches) {
+
+       Draggable.create('.gallery', {
+           bounds: 'body',
+           inertia: true
+       })
+   }
+   },200)
+}
